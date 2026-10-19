@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Againo",
+    "slug": "againo",
+    "scheme": [
+      "againo",
+      "com.googleusercontent.apps.632427679037-3nstfngg1oc0irrfh8naa7sc0ocls4nu"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/Assets/Againo-icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./public/Assets/Againo-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fulailkt.againo",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Used to check in at the gym."
+      }
+    },
+    "android": {
+      "package": "com.fulailkt.againo",
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./public/Assets/Againo-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./public/Assets/Againo-icon.png"
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#0b0d12",
+      "translucent": true
+    },
+    "androidNavigationBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#0b0d12"
+    },
+    "plugins": [
+      "expo-web-browser",
+      "expo-secure-store",
+      "expo-location",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Used to save a client's haircut photo."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e1faeb10-dfe0-4f7a-b4ae-a8b24e8e5660"
+      }
+    },
+    "owner": "fulailkt"
+  }
+}
